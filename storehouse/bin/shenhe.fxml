@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="502.0" prefWidth="795.0" style="-fx-background-image: url('file:F:/Microsoftdownload/12.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.shenheController">
+   <children>
+      <TabPane prefHeight="361.0" prefWidth="811.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="货品信息">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="HuoTable" layoutX="-6.0" layoutY="-3.0" opacity="0.7" prefHeight="331.0" prefWidth="821.0">
+                          <columns>
+                            <TableColumn fx:id="Huo_ID" prefWidth="148.0" text="货品编号" />
+                            <TableColumn fx:id="Huo_name" prefWidth="240.0" text="货品名称" />
+                              <TableColumn fx:id="Huo_num" prefWidth="170.0" text="库存数量" />
+                              <TableColumn fx:id="Huo_pro" prefWidth="262.0" text="生产地" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="进货单">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="JinhuoTable" opacity="0.7" prefHeight="330.0" prefWidth="811.0">
+                          <columns>
+                            <TableColumn fx:id="Jinhuo_ID" prefWidth="141.0" text="货品编号" />
+                            <TableColumn fx:id="Jinhuo_name" prefWidth="248.0" text="货品名称" />
+                              <TableColumn fx:id="Jinhuo_num" prefWidth="173.0" text="进货数量" />
+                              <TableColumn fx:id="Jinhuo_pro" prefWidth="248.0" text="生产地" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="出货单">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="798.0">
+                     <children>
+                        <TableView fx:id="ChuhuoTable" opacity="0.7" prefHeight="326.0" prefWidth="811.0">
+                          <columns>
+                            <TableColumn fx:id="Chuhuo_ID" prefWidth="149.0" text="货品编号" />
+                              <TableColumn fx:id="Chuhuo_name" prefWidth="208.0" text="货品名称" />
+                              <TableColumn fx:id="Chuhuo_num" prefWidth="110.0" text="出货数量" />
+                              <TableColumn fx:id="Chuhuo_pro" prefWidth="172.0" text="生产地" />
+                              <TableColumn fx:id="Chuhuo_to" prefWidth="171.0" text="出货至" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="缺货单">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="798.0">
+                     <children>
+                        <TableView fx:id="LackTable" layoutX="-7.0" opacity="0.7" prefHeight="324.0" prefWidth="818.0">
+                           <columns>
+                              <TableColumn fx:id="lack_ID" prefWidth="135.0" text="货品编号" />
+                              <TableColumn fx:id="lack_name" prefWidth="166.0" text="货品名称" />
+                              <TableColumn fx:id="lack_num" prefWidth="101.0" text="缺货数量" />
+                              <TableColumn fx:id="lack_pro" prefWidth="136.0" text="生产地" />
+                              <TableColumn fx:id="lack_time" prefWidth="272.0" text="缺货登记时间" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="已审核的进货单">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="798.0">
+                     <children>
+                        <TableView fx:id="SjinhuoTable" opacity="0.7" prefHeight="325.0" prefWidth="811.0">
+                           <columns>
+                              <TableColumn fx:id="Sjinhuo_ID" prefWidth="161.0" text="货品编号" />
+                              <TableColumn fx:id="Sjinhuo_name" prefWidth="204.0" text="货品名称" />
+                              <TableColumn fx:id="Sjinhuo_num" prefWidth="192.0" text="进货数量" />
+                              <TableColumn fx:id="Sjinhuo_time" prefWidth="253.0" text="审核时间" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="已审核的出货单">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="798.0">
+                     <children>
+                        <TableView fx:id="SchuhuoTable" opacity="0.7" prefHeight="325.0" prefWidth="811.0">
+                           <columns>
+                              <TableColumn fx:id="Schuhuo_ID" prefWidth="125.0" text="货品编号" />
+                              <TableColumn fx:id="Schuhuo_name" prefWidth="192.0" text="货品名称" />
+                              <TableColumn fx:id="Schuhuo_num" prefWidth="93.0" text="出货数量" />
+                              <TableColumn fx:id="Schuhuo_time" prefWidth="290.0" text="审核时间" />
+                              <TableColumn fx:id="Schuhuo_islacked" prefWidth="110.0" text="是否缺货" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="已处理的缺货单">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="798.0">
+                     <children>
+                        <TableView fx:id="ClackTable" opacity="0.7" prefHeight="322.0" prefWidth="811.0">
+                           <columns>
+                              <TableColumn fx:id="Clack_ID" prefWidth="125.0" text="货品编号" />
+                              <TableColumn fx:id="Clack_name" prefWidth="166.0" text="货品名称" />
+                              <TableColumn fx:id="Clack_pro" prefWidth="125.0" text="生产地" />
+                              <TableColumn fx:id="Clack_chulinum" prefWidth="100.0" text="缺货数量" />
+                              <TableColumn fx:id="Clack_lacknum" prefWidth="84.0" text="处理数量" />
+                              <TableColumn fx:id="Clack_chulitime" prefWidth="210.0" text="缺货处理时间" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ComboBox fx:id="com_jinhuo" editable="true" layoutX="134.0" layoutY="383.0" prefHeight="40.0" prefWidth="111.0" />
+      <ComboBox fx:id="com_chuhuo" editable="true" layoutX="547.0" layoutY="386.0" prefHeight="40.0" prefWidth="111.0" />
+      <Button fx:id="btn_jin" layoutX="271.0" layoutY="386.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="96.0" text="审核通过" />
+      <Button fx:id="btn_chu" layoutX="698.0" layoutY="386.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" text="审核通过" />
+      <TextField editable="false" layoutX="14.0" layoutY="383.0" prefHeight="40.0" prefWidth="96.0" text="进货单审核:" />
+      <TextField editable="false" layoutX="412.0" layoutY="386.0" prefHeight="40.0" prefWidth="96.0" text="出货单审核:" />
+      <Button fx:id="btn_fresh" layoutX="197.0" layoutY="448.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="96.0" text="刷新" />
+      <Button fx:id="btn_exit" layoutX="484.0" layoutY="448.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="96.0" text="退出" />
+   </children>
+</AnchorPane>

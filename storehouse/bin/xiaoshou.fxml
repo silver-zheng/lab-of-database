@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="771.0" prefWidth="791.0" style="-fx-background-image: url('file:F:/Microsoftdownload/11.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.xiaoshouController">
+   <children>
+      <TabPane layoutX="-5.0" layoutY="-4.0" prefHeight="495.0" prefWidth="794.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="出货列表">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="359.0" prefWidth="748.0">
+                     <children>
+                        <TableView fx:id="ChuhuoTable" layoutX="1.0" layoutY="-2.0" opacity="0.7" prefHeight="402.0" prefWidth="794.0">
+                          <columns>
+                            <TableColumn fx:id="col_ID" prefWidth="125.0" text="货品编号" />
+                            <TableColumn fx:id="col_name" prefWidth="229.0" text="货品名称" />
+                              <TableColumn fx:id="col_num" prefWidth="134.0" text="出货数量" />
+                              <TableColumn fx:id="col_pro" prefWidth="164.0" text="生产地" />
+                              <TableColumn fx:id="col_to" prefWidth="141.0" text="出货至" />
+                          </columns>
+                        </TableView>
+                        <Text fill="#6ab1d9" layoutX="630.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="对出货单的操作">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#6ab1d9" layoutX="26.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="选择货品号">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="缺货列表">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="341.0" prefWidth="710.0">
+                     <children>
+                        <TableView fx:id="LackTable" layoutY="-3.0" opacity="0.7" prefHeight="400.0" prefWidth="794.0">
+                          <columns>
+                            <TableColumn fx:id="lack_ID" prefWidth="107.0" text="货品编号" />
+                            <TableColumn fx:id="lack_name" prefWidth="161.0" text="货品名称" />
+                              <TableColumn fx:id="lack_num" prefWidth="87.0" text="缺货数量" />
+                              <TableColumn fx:id="lack_pro" prefWidth="195.0" text="生产地" />
+                              <TableColumn fx:id="lack_time" prefWidth="243.0" text="缺货登记时间" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="btn_add" layoutX="700.0" layoutY="517.0" mnemonicParsing="false" text="增加" />
+      <Button fx:id="btn_del" layoutX="700.0" layoutY="588.0" mnemonicParsing="false" text="删除" />
+      <Button fx:id="btn_upd" layoutX="700.0" layoutY="665.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="修改" />
+      <ComboBox fx:id="com_add" editable="true" layoutX="14.0" layoutY="511.0" prefHeight="42.0" prefWidth="118.0" />
+      <ComboBox fx:id="com_del" editable="true" layoutX="14.0" layoutY="582.0" prefHeight="36.0" prefWidth="118.0" />
+      <ComboBox fx:id="com_upd" editable="true" layoutX="14.0" layoutY="662.0" prefHeight="36.0" prefWidth="118.0" />
+      <TextField fx:id="text11" layoutX="162.0" layoutY="514.0" prefHeight="36.0" prefWidth="118.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="text12" layoutX="314.0" layoutY="514.0" prefHeight="36.0" prefWidth="78.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="text13" layoutX="421.0" layoutY="514.0" prefHeight="36.0" prefWidth="106.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="text21" editable="false" layoutX="162.0" layoutY="585.0" prefHeight="30.0" prefWidth="118.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="text22" editable="false" layoutX="314.0" layoutY="585.0" prefHeight="30.0" prefWidth="78.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="text23" editable="false" layoutX="421.0" layoutY="585.0" prefHeight="36.0" prefWidth="106.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="text31" layoutX="162.0" layoutY="662.0" prefHeight="36.0" prefWidth="118.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="text32" layoutX="314.0" layoutY="662.0" prefHeight="30.0" prefWidth="78.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="text33" layoutX="421.0" layoutY="662.0" prefHeight="30.0" prefWidth="106.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="text14" layoutX="563.0" layoutY="514.0" prefHeight="36.0" prefWidth="106.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="text24" editable="false" layoutX="563.0" layoutY="585.0" prefHeight="36.0" prefWidth="106.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="text34" layoutX="563.0" layoutY="662.0" prefHeight="36.0" prefWidth="106.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_fresh" layoutX="271.0" layoutY="723.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="62.0" text="刷新" />
+      <Button fx:id="btn_exit" layoutX="513.0" layoutY="723.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="62.0" text="退出" />
+   </children>
+</AnchorPane>

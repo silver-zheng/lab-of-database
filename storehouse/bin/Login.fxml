@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="834.0" style="-fx-background-image: url('file:F:\Microsoftdownload/background.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Text fill="#75dac9" layoutX="38.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="欢迎使用" wrappingWidth="327.30029296875">
+         <font>
+            <Font size="61.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="text_2" layoutX="334.0" layoutY="211.0" prefHeight="53.0" prefWidth="307.0" />
+      <Text layoutX="224.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" wrappingWidth="92.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="202.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="编号" textAlignment="CENTER" wrappingWidth="92.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_2" layoutX="575.0" layoutY="306.0" mnemonicParsing="false" onAction="#evenButton" prefHeight="30.0" prefWidth="57.0" text="清除" />
+      <TextField fx:id="text_1" layoutX="335.0" layoutY="141.0" prefHeight="53.0" prefWidth="307.0" />
+      <Button fx:id="btn_1" layoutX="335.0" layoutY="306.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="57.0" text="登陆" />
+   </children>
+</Pane>
